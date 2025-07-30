@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Gallery - Videos & Audios</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="1.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+            margin-top: 2rem;
+        }
+        .media-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-between;
+        }
+        .media-item {
+            flex: 1 1 45%;
+            margin-bottom: 2rem;
+        }
+        iframe, audio {
+            width: 100%;
+            border-radius: 8px;
+        }
+        @media (max-width: 700px) {
+            .media-section {
+                flex-direction: column;
+            }
+            .media-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Media Gallery</h1>
+        <p>Watch videos and listen to audio from different categories</p>
+    </header>
+    <div class="container">
+        <h2>Videos</h2>
+        <div class="media-section">
+            <div class="media-item">
+                <h3>Education</h3>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tgbNymZ7vqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="media-item">
+                <h3>Music</h3>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <h2>Audios</h2>
+        <div class="media-section">
+            <div class="media-item">
+                <h3>Podcast</h3>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="media-item">
+                <h3>Nature Sounds</h3>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+td {
+    background: radial-gradient(circle at center, rgba(251,211,211,0.8) 0%, rgba(0,0,0,0.1) 100%);
+    transition: background 0.4s, padding 0.4s, color 0.4s, opacity 0.4s;
+    border: 20px solid rgb(251, 211, 211);
+    border-radius: 200px;
+    padding: 10px;
+    transition: padding 0.4s, color 0.4s, opacity 0.4s;
+    opacity: 1;
+}
+
+/* Pop up the hovered cell */
+td:hover {
+    padding: 30px;
+    opacity: 1;
+}
+
+/* Fade other cells in the same row */
+tr:hover td:not(:hover) {
+    opacity: 0.5;
+    transition: opacity 0.4s;
+}
+
+td:hover {
+    padding: 30px;
+}
+
+th{
+    background-color: lightcyan;
+    border: 20px solid grey;
+    border-radius: 200px ;
+    padding: 10px ;
+}
+caption {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+caption:hover {
+    color: red;
+    transition: color 0.2s ease-in-out;
+    ;
+}

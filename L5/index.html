@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Tags Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f9f9f9;
+        }
+        header, nav, main, aside, footer, article, section {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            cursor: pointer;
+        }
+        main {
+            display: flex;
+            max-width: 1000px;
+            margin: 2rem auto;
+            gap: 2rem;
+        }
+        aside {
+            background: #eee;
+            padding: 1rem;
+            width: 250px;
+            border-radius: 8px;
+        }
+        section {
+            flex: 1;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        figure {
+            margin: 1rem 0;
+            text-align: center;
+        }
+        figcaption {
+            font-size: 0.95em;
+            color: #555;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About</li>
+                <li>Menu</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Sidebar</h2>
+            <p>This is a sidebar section where you can add additional information or links.</p>
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </ul>
+        </aside>
+        <section>
+            <h1>What are Semantic Tags?</h1>
+            <article>
+                <h2>Introduction to Semantic Tags</h2>
+                <p>Semantic tags are HTML elements that clearly describe their meaning in a human- and machine-readable way. They help structure your web page and improve accessibility and SEO.</p>
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 Logo" width="150">
+                    <figcaption>HTML5 Logo representing semantic tags in HTML.</figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 My Website &mdash; Copyright information goes here.</p>
+    </footer>
+</body>
+</html>

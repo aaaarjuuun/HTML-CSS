@@ -1,0 +1,28 @@
+h2 {
+    color: #fff;
+    text-shadow:
+        0 0 10px #0d3970,
+        0 0 10px #00ff00,
+        0 0 10px #0000ff;
+    animation: glowZoom 1.2s infinite alternate;
+
+    text-align: center;
+
+}
+
+@keyframes glowZoom {
+    0% {
+        transform: scale(1);
+        text-shadow:
+            0 0 10px #ff0000,
+            0 0 10px #00ff00,
+            0 0 10px #0000ff;
+    }
+    100% {
+        transform: scale(1.15);
+        text-shadow:
+            0 0 20px #ff0000,
+            0 0 20px #00ff00,
+            0 0 20px #0000ff;
+    }
+}
